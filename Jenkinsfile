@@ -7,6 +7,7 @@ pipeline {
         stage('Example') {
 	    steps {
 		sh('echo ${STATEMENT}')
+		sh('echo second sh execution')
 	    }
 	}
     }
