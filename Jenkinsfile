@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Example') {
 	    steps {
-		sh('echo ${STATEMENT}')
+		sh('composer --version')
+		sh('php artisan --version')
 	    }
 	}
     }
